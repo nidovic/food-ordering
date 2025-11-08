@@ -27,7 +27,7 @@ async def extract_order_groq(
     
     try:
         response = client.chat.completions.create(
-            model="llama-3.2-90b-text-preview",
+            model="llama-3.3-70b-versatile",
             messages=[
                 {"role": "system", "content": "You extract JSON from food orders."},
                 {"role": "user", "content": prompt}
