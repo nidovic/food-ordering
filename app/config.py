@@ -12,6 +12,7 @@ class Settings(BaseSettings):
     # Spreeloop API
     spreeloop_api_url: str
     spreeloop_api_token: str
+    spreeloop_default_place_id: str = "default_place"  # AJOUTÉ: ID du restaurant par défaut
     
     # Firebase
     firebase_credentials_json: str
